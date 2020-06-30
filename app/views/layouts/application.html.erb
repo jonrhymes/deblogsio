@@ -5,11 +5,23 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-5">
+          <%= image_tag("bill.jpg", :class => "img-thumbnail", :alt => "bill de blasio") %>
+          <h1>Bill de Blogsio</h1>
+        </div>
+      
+        <div class="col-xs">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

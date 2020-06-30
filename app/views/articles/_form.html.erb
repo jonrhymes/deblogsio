@@ -1,5 +1,4 @@
 <%= form_with(model: @article, local: true) do |form| %>
-
     <% if @article.errors.any? %>
         <div id="error_explanation">
             <h2>
@@ -14,15 +13,19 @@
         </div>
     <% end %>
 
+    <div class="form-group">
     <p>
         <%= form.label :title %><br>
-        <%= form.text_field :title %>
+        <%= form.text_field :title, :class => "form-control" %>
     </p>
-
+    </div>
+    
+    <div class="form-group">
     <p>
         <%= form.label :text %><br>
-        <%= form.text_area :text %>
+        <%= form.text_area :text, :class => "form-control" %>
     </p>
+    </div>
 
     <p>
         <%= form.submit %>

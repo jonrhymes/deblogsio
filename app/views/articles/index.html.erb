@@ -1,22 +1,27 @@
-<h1>Index page</h1>
+<div class="jumbotron jumbotron-fluid">
+    <h1 class="display-4">Speak Your Mind</h1>
+    <p class="lead">This is an outlet for the public to say something about Bill. Feel free to write a new blog post or leave a comment below.</p>
+</div>
 
-<%= link_to 'New article', new_article_path %>
-<table>
-    <tr>
-        <th>Title</th>
-        <th>Text</th>
-        <th colspan="3"></th>
-    </tr>
-
+<%= link_to 'Add a new post', new_article_path, :class => "badge", :style => "font-size:20px;padding:20px;background-color:#5cb85c;margin-bottom:10px;" %>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Blog Title</th>
+            <th scope="col">Blog Entry</th>
+        </tr>
+    </thead>
+    <tbody>
     <% @articles.each do |article| %>
         <tr>
             <td><%= article.title %></td>
             <td><%= article.text %></td>
-            <td><%= link_to 'Show', article_path(article) %></td>
-            <td><%= link_to 'Edit', edit_article_path(article) %></td>
-            <td><%= link_to 'Destroy', article_path(article),
+            <td><%= link_to 'See Post', article_path(article), class: 'btn btn-primary btn-xs' %></td>
+            <td><%= link_to 'Edit', edit_article_path(article), class: 'btn btn-info btn-xs' %></td>
+            <td><%= link_to 'Delete', article_path(article), class: 'btn btn-danger btn-xs',
                                                     method: :delete,
                                                     data: { confirm: 'Are you sure?' } %></td>
         </tr>
         <% end %>
+    </tbody>
 </table>
