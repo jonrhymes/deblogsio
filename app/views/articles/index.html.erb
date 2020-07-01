@@ -1,13 +1,14 @@
-<div class="jumbotron jumbotron-fluid">
-    <h1 class="display-4">Speak Your Mind</h1>
+<div class="jumbotron jumbotron-fluid text-center", style="background-color:#e3feff">
+    <%= image_tag("bill.jpg", :class => "img-thumbnail", :alt => "bill de blasio", :style => "width:200px;display:inline;") %>
+    <h1 class="display-4">Bill de Blogsio</h1>
     <p class="lead">This is an outlet for the public to say something about Bill. Feel free to write a new blog post or leave a comment below.</p>
 </div>
 
 <%= link_to 'Add a new post', new_article_path, :class => "badge", :style => "font-size:20px;padding:20px;background-color:#5cb85c;margin-bottom:10px;" %>
-<table class="table table-hover">
+<table class="table table-striped">
     <thead>
         <tr>
-            <th scope="col">Blog Title</th>
+            <th scope="col-3">Blog Title</th>
             <th scope="col">Blog Entry</th>
         </tr>
     </thead>

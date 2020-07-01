@@ -1,22 +1,19 @@
-<div style="width:50%;background:#9ce6ff;padding:30px;">
-    <p>
-    <strong>Title:</strong>
-    <%= @article.title %>
-    </p>
-
-    <p>
-    <strong>Blog Post:</strong>
+<div style="width:100%;background:#9ce6ff;padding:30px;">
+    
+    <h2><%= @article.title %></h2>
+    
     <%= @article.text %>
-    </p>
 </div>
     
+<div style="background-color:#dedede;padding:30px;margin-top:10px;margin-bottom:15px;">
 
-<h2>Comments</h2>
-<%= render @article.comments %>
+    <h2>Comments</h2>
+    <%= render @article.comments %>
 
-<h3>Add a comment:</h3>
-<%= render 'comments/form' %>
+    <h3>Add a comment:</h3>
+    <%= render 'comments/form' %>
 
-<%= link_to 'Edit', edit_article_path(@article) %> | 
-<%= link_to 'Back', articles_path %>
+</div>
+<%= link_to 'Edit', edit_article_path(@article), :class => "badge", :style => "font-size:20px;padding:20px;background-color:#dbcf6e;margin-bottom:10px;" %>
+<%= link_to 'Back', articles_path, :class => "badge", :style => "font-size:20px;padding:20px;background-color:#5cb85c;margin-bottom:10px;"%>
     
