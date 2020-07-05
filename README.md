@@ -1,24 +1,11 @@
-# README
+# GA Final Project: Bill de Blogsio
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+For the final project, we were asked to build an app using a new language we had not used during the program. I chose Ruby on Rails and learned a new way to make Models, Views and Controllers, plus the 7 RESTful routes. 
 
-Things you may want to cover:
+The app uses:
 
-* Ruby version
+* Ruby on Rails
+* PostgreSQL
+* Bootstrap
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+It's hosted on Heroku: [Bill de Blogsio](https://deblogsio.herokuapp.com/articles) 
