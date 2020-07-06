@@ -11,7 +11,7 @@ The app uses:
 * Yarn
 * Webpack
 
-What I found interesting were the similarities between languages. Ruby uses _puts_ instead of _console.log_ or _PRINTS_; it uses _do / end_ and _until_ for While Loops; uses _def_ like Python, instead of _const_ or _let_. Also curious were the tags `<% %>` and reference elements like `@article`. And like Python, Ruby makes migrations of its Models. 
+What I found interesting were the similarities between languages. Ruby uses `puts` instead of `console.log` or `PRINTS`; it uses `do` or `end` and `until` for While Loops; uses `def` like Python, instead of `const` or `let`. Also curious were the tags `<% %>` and reference elements like `@article`. And like Python, Ruby makes migrations of its Models. 
 
 It's hosted on Heroku: [Bill de Blogsio](https://deblogsio.herokuapp.com/articles) 
 
