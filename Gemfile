@@ -27,6 +27,7 @@ gem 'sprockets-rails', '~> 3.2.1'
 gem 'carrierwave', '~> 2.1.0'
 gem 'bootstrap', '~> 4.5.0'
 gem 'autoprefixer-rails'
+gem 'actionview', '~> 6.0.3'
 
 
 # Use Active Storage variant
